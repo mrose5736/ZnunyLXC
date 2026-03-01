@@ -32,6 +32,8 @@ function update_script() {
 }
 
 start
+GITHUB_REPO="mrose5736/ZnunyLXC"
+BRANCH="main"
 build_container
 description
 
