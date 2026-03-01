@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/misc/build.func)
+source <(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/misc/build.func | sed 's|community-scripts/ProxmoxVE/main/install|mrose5736/ZnunyLXC/main/install|g')
 # Copyright (c) 2021-2026 community-scripts ORG
 # Author: Antigravity
 # License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
@@ -32,8 +32,6 @@ function update_script() {
 }
 
 start
-GITHUB_REPO="mrose5736/ZnunyLXC"
-BRANCH="main"
 build_container
 description
 
